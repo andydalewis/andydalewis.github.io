@@ -1,0 +1,43 @@
+@font-face{
+	font-family: customfont;
+	src: url(../fonts/sharnayextralight-webfont.woff);
+	}
+
+header{
+	position: relative;
+	background-image: url(../images/TopBannerBG.png);
+	top: 50px;
+	left: 5%;
+	width: 90%;
+	right: 5%;
+	border-radius: 10px 10px 0px 0px;
+	}
+
+footer{
+	position: relative;
+	background-image: url(../images/BottomBannerBG.png);
+	top: 100px;
+	height: 23px;
+	left: 5%;
+	width: 90%;
+	right: 5%;
+	border-radius: 0px 0px 10px 10px;
+	}
+p.footertext{
+	position: relative;
+	text-align: center;	
+	color: white;
+	font-family: customfont;
+	font-size: 10pt;
+	}
+
+div.main_content{
+	position: relative;
+	background-color: white;
+	top: 51px;
+	height: 400px;
+	left: 5%;
+	width: 90%;
+	right: 5%;
+	font-family: customfont;
+	}
