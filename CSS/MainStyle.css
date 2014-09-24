@@ -6,6 +6,7 @@
 header{
 	position: relative;
 	background-image: url(../images/TopBannerBG.png);
+	height: 52px;
 	top: 50px;
 	left: 5%;
 	width: 90%;
@@ -13,31 +14,65 @@ header{
 	border-radius: 10px 10px 0px 0px;
 	}
 
+img.logo{
+	padding-top: 10px;
+	padding-left: 10px;
+	}
+
 footer{
 	position: relative;
 	background-image: url(../images/BottomBannerBG.png);
-	top: 100px;
+	top: 38px;
 	height: 23px;
 	left: 5%;
 	width: 90%;
 	right: 5%;
 	border-radius: 0px 0px 10px 10px;
 	}
+
 p.footertext{
 	position: relative;
 	text-align: center;	
+	padding-top: 5px;
 	color: white;
 	font-family: customfont;
-	font-size: 10pt;
+	font-size: 9pt;
+	}
+
+nav.vertical_nav{
+	position: relative;
+	background-color: white;	
+	width: 25%;
+	float: left;
+	height: 648px;
+	line-height: 30px;
 	}
 
 div.main_content{
 	position: relative;
 	background-color: white;
-	top: 51px;
-	height: 400px;
+	top: 50px;
+	height: 648px;
+	width: 75%;
 	left: 5%;
 	width: 90%;
 	right: 5%;
 	font-family: customfont;
+	}
+
+div.splash_image{
+	background-image: url(../images/Front-Page-Content.jpg);
+	position: relative;
+	background-repeat: no-repeat;
+	left: 25%;
+	height: 580px;
+	width: 70%;
+	top: 20px;
+	}
+
+div.icon{
+	position: relative;
+	float: right;
+	height: 500px;
+
 	}
