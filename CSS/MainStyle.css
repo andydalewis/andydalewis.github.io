@@ -1,6 +1,21 @@
 @font-face{
 	font-family: customfont;
-	src: url(../fonts/sharnayextralight-webfont.woff);
+	src: url('../fonts/sharnayextralight-webfont.woff') format('woff');
+	src: url('../fonts/sharnayextralight-webfont.ttf') format('truetype');
+	src: url('../fonts/sharnayextralight-webfont.woff') format('woff');
+	src: url('../fonts/sharnayextralight-webfont.svg') format('svg');
+	}
+
+div.container{
+	position: relative;
+	background-color: white;
+	left: 5%;
+	right: 5%;
+	top: 50px;
+	width: 90%;
+	height: 720px;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0px 0px 30px rgba(0,0,0,.15);
 	}
 
 header{
@@ -12,6 +27,7 @@ header{
 	width: 90%;
 	right: 5%;
 	border-radius: 10px 10px 0px 0px;
+	box-shadow: 0px -7px 20px rgba(0,0,0,.10);
 	}
 
 img.logo{
@@ -28,6 +44,7 @@ footer{
 	width: 90%;
 	right: 5%;
 	border-radius: 0px 0px 10px 10px;
+	box-shadow: 0px 7px 20px rgba(0,0,0,.25);
 	}
 
 p.footertext{
@@ -37,7 +54,7 @@ p.footertext{
 	color: white;
 	font-family: customfont;
 	font-size: 9pt;
-	}
+		}
 
 nav.vertical_nav{
 	position: relative;
@@ -46,6 +63,14 @@ nav.vertical_nav{
 	float: left;
 	height: 648px;
 	line-height: 30px;
+	}
+
+button.navbutton{
+	   font-family: customfont;
+	   background-color: white;
+	   border-style: none;
+	   color: red;
+	   font-size: 16px;
 	}
 
 div.main_content{
@@ -58,12 +83,14 @@ div.main_content{
 	width: 90%;
 	right: 5%;
 	font-family: customfont;
+	box-shadow: 0px 0px 20px rgba(0,0,0,.75);
 	}
 
 div.splash_image{
 	background-image: url(../images/Front-Page-Content.jpg);
 	position: relative;
 	background-repeat: no-repeat;
+	margin: 0px;
 	left: 25%;
 	height: 580px;
 	width: 70%;
@@ -73,6 +100,7 @@ div.splash_image{
 div.icon{
 	position: relative;
 	float: right;
-	height: 500px;
-
+	z-index: 1;
+	width: 58px;
+	margin-bottom: 
 	}
