@@ -1,0 +1,112 @@
+<!DOCTPYE html>
+<html>
+	<head>
+		<title>In Class Calculator</title>
+		<style type="text/css">
+			.outerbox{
+				background-color: blue;
+				width: 300px;
+				height: 300px;
+			}
+
+			#screen{
+				background-color: white;
+				position: relative;
+				height: 50px;
+				width: 200px;
+			}
+			#buttonbox{
+				background-color: red;
+				height: 300px;
+
+			}
+
+			.mybutton{
+				border-radius: 
+				height: 50px;
+				width: 50px;
+
+			}
+		</style>
+
+		<script type="text/javascript">
+			var firstNumber = '';
+			var selectedOperator = '';
+			var secondNumber = '';
+			function appendNumber(num){
+					document.getElementById('screen').value + = num; 
+			}
+
+			function operator(op){
+				firstNumber = parseFloat(document.getElementById('screen').value);
+				document.getElementById('screen').value = '';
+				selectedOperator = op;
+			}
+
+			function equals(){
+				secondNumber = parseFloat(document.getElementById('screen').value);
+
+				var total = '';
+
+				if(selectedOperator == '+'){
+					total = firstNumber + secondNumber;
+				}
+				else if(selectedOperator == '-'){
+					total = firstNumber - secondNumber;
+
+				}
+				else if(selectedOperator == '*'){
+					total = firstNumber * secondNumber;
+
+				}
+				else if(selectedOperator == '/'){
+					total = firstNumber / secondNumber;
+
+				}
+				else{
+					alert('there is an error');
+				}
+				document.getElementById('screen').value = total;
+			}
+		</script>
+	</head>
+	<body>
+		
+		<div class="outerbox">
+
+			<input id="screen"></input>
+			<div id="buttonbox">
+				<div class="buttonrow">
+					<button class="mybutton">c</button>
+					<button class="mybutton">m</button>
+					<button class="mybutton">mr</button>
+					<button class="mybutton"
+						onclick="operator('/')"
+					>/</button>
+
+				</div>
+				<div class="buttonrow">
+					<button class="mybutton">7</button>
+					<button class="mybutton">8</button>
+					<button class="mybutton">9</button>
+					<button class="mybutton">*</button>
+				</div>
+				<div class="buttonrow">
+					<button class="mybutton" onclick="appendNumber(4)">4</button>
+					<button class="mybutton" onclick="appendNumber(5)">5</button>
+					<button class="mybutton" onclick="appendNumber(6)">6</button>
+					<button class="mybutton">-</button>
+				</div>
+				<div class="buttonrow">
+					<button class="mybutton" onclick="appendNumber(1)">1</button>
+					<button class="mybutton" onclick="appendNumber(2)">2</button>
+					<button class="mybutton" onclick="appendNumber(3)">3</button>
+					<button class="mybutton">+</button>
+				</div>
+			</div>
+
+
+
+
+	</body>
+</html>

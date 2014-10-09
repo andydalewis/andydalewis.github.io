@@ -1,0 +1,85 @@
+<!DOCTPYE html>
+<html>
+	<head>
+		<title>In Class Calculator</title>
+		<style type="text/css">
+			.outerbox{
+				background-color: blue;
+				width: 300px;
+				height: 300px;
+			}
+
+			#screen{
+				background-color: white;
+				position: relative;
+				height: 50px;
+				width: 200px;
+			}
+			#buttonbox{
+				background-color: red;
+				height: 300px;
+
+			}
+
+			.mybutton{
+				border-radius: 
+				height: 50px;
+				width: 50px;
+
+			}
+		</style>
+
+		<script type="text/javascript">
+			function appendNumber(num){
+				console.log(num);
+				//get current screen
+					var curScreenValue = document.getElementById('screen').value;
+				//add num to screen
+					var newScreeValue = curScreenValue + num;
+
+					document.getElementById('screen').value = newScreenValue;
+
+			}
+
+		</script>
+	</head>
+	<body>
+		
+		<div class="outerbox">
+
+			<input id="screen"></input>
+			<div id="buttonbox">
+				<div class="buttonrow">
+					<button class="mybutton">c</button>
+					<button class="mybutton">m</button>
+					<button class="mybutton">mr</button>
+					<button class="mybutton">/</button>
+
+				</div>
+				<div class="buttonrow">
+					<button class="mybutton">7</button>
+					<button class="mybutton">8</button>
+					<button class="mybutton">9</button>
+					<button class="mybutton">*</button>
+				</div>
+				<div class="buttonrow">
+					<button class="mybutton">4</button>
+					<button class="mybutton">5</button>
+					<button class="mybutton">6</button>
+					<button class="mybutton">-</button>
+				</div>
+				<div class="buttonrow">
+					<button class="mybutton"
+						onclick="appendNumber(1)"
+						>1</button>
+					<button class="mybutton">2</button>
+					<button class="mybutton">3</button>
+					<button class="mybutton">+</button>
+				</div>
+			</div>
+
+
+
+
+	</body>
+</html>

@@ -1,0 +1,88 @@
+<html>
+	<head>
+		<title>Tic Tac Toe Game</title>
+
+		<style type="text/css">
+			div.board{
+				height: 300px;
+				width: 300px;
+				background-color: gray;
+			}
+
+			div.toprow{
+				background-color: red;
+				height: 100px;
+				width: 300px;
+				position: 0px;
+				border-radius: 10px;		
+			}
+			div.middlerow{
+				background-color: green;
+				height: 100px;
+				width: 300px;
+				position: 0px;
+				border-radius: 10px;
+			}
+			div.bottomrow{
+				background-color: blue;
+				height: 100px;
+				width: 300px;
+				position: 0px;
+				border-radius: 10px;	
+			}
+			div.cell{
+				background-color: orange;	
+				height: 100px;
+				width: 33.3%;
+				float: left;
+				border-radius: 15px;
+
+			}
+		</style>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="board">
+			
+			<div class="toprow">
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>			
+			</div>
+			
+			<div class="middlerow">
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+			</div>
+
+			<div class="bottomrow">
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+			</div>	
+
+		</div>
+		<script type="text/javascript">
+			var i = "X";
+			$(document).ready(function(){
+				$('.cell').click(function(){
+					var cellhtml = $(this).html();
+					if(cellhtml == 'X' || cellhtml == 'O'){
+					}
+					else{
+						$(this).html(i);
+						if(i == 'X'){
+						 i = 'O';
+						}
+						else if(i == 'O'){
+						 i = 'X'
+						}
+					}
+				})
+			});
+		</script>
+	
+	</body>
+</html>

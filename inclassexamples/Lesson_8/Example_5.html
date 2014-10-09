@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Example 5</title>
+	</head>
+	<body>
+		<button onclick="runFunction()">Message</button>
+
+		<script type="text/javascript">
+			function runFunction(){
+				var userInput = prompt('Give a greeting.');
+				var output = getMessage(userInput);
+				alert(output + ' ' + output);
+			}
+
+
+			function getMessage(input){
+
+				if(input == 'badword'){
+					return 'That is not a nice.';
+				}
+				else if(input == 'Joke'){
+					return 'That is Funny!';
+				}
+				else{
+					return input + ' world';
+				}
+
+			}
+			
+		</script>
+
+	</body>
+</html>

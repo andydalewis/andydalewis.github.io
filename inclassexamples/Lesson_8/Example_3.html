@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Example 3</title>
+	</head>
+	<body>
+		<button onclick="runFunction()">Message</button>
+
+		<script type="text/javascript">
+			function runFunction(){
+				var userInput = prompt('Will you eat Nutella?')
+				var output = getMessage(userInput);
+				alert(output + ' ' + output);
+			}
+
+			function getMessage(input){
+				return input + ' Yummy';
+			}
+
+		</script>
+
+	</body>
+</html>
